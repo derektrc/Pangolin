@@ -129,8 +129,8 @@ bool isExtensionSupported(const char *extList, const char *extension)
         if ( vi )
         {
             int samp_buf, samples;
-            glXGetFBConfigAttrib( display, fbc[i], GLX_SAMPLE_BUFFERS, &samp_buf );
-            glXGetFBConfigAttrib( display, fbc[i], GLX_SAMPLES       , &samples  );
+            //glXGetFBConfigAttrib( display, fbc[i], GLX_SAMPLE_BUFFERS, &samp_buf );
+            //glXGetFBConfigAttrib( display, fbc[i], GLX_SAMPLES       , &samples  );
 
             // Filter for the best available.
             if ( samples > best_num_samp ) {
