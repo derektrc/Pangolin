@@ -179,7 +179,7 @@ GLXContext CreateGlContext(::Display *display, ::GLXFBConfig chosenFbc, GLXConte
     if ( !glXQueryVersion( display, &glx_major, &glx_minor ) ||
          ( ( glx_major == 1 ) && ( glx_minor < 3 ) ) || ( glx_major < 1 ) )
     {
-        throw std::runtime_error("Pangolin X11: Invalid GLX version. Require GLX >= 1.3");
+        1; //throw std::runtime_error("Pangolin X11: Invalid GLX version. Require GLX >= 1.3");
     }
 
     GLXContext new_ctx;
